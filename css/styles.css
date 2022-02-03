@@ -107,6 +107,8 @@ li{
     margin-left:auto;
 }
 .contact-nav a{
+    display: flex;
+    align-items: center;
     color: var(--title-text-color);
 }
 
@@ -116,23 +118,14 @@ li{
 
 .icon-mail {
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
 .icon-tel{
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
-.icon-mail:hover,
-.icon-mail:focus{
-   fill: var(--acent-color); 
-}
-
-.icon-tel :hover,
-.icon-tel :focus{
-    fill: var(--acent-color);
-}
 /* Секция 1 Заголовок Н1 Эффективные решения для вашего бизнеса*/
 
 .one {
@@ -148,7 +141,7 @@ li{
     background-position: center;
     background-size: cover;
     min-width: 1200px;
-
+    max-width: 1600px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -354,7 +347,7 @@ li{
 }
 .team .title-grey{
     color:var(--title-text-color);
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 16px;
 }
 
@@ -372,26 +365,24 @@ li{
 }
 
 .icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 20px;
     height: 20px;
-    margin: auto;
     fill: #AFB1B8;;
 }
-.icon:hover,
-.icon:focus {
-    fill: #FFFFFF;
-}
 
+.team a:hover svg,
+.team a:focus svg{
+fill: #FFFFFF; 
+}
 .icon-soc:last-child{
     margin-right: 0px;
 }
 
 .team a{
-    display:flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
+
     width: 44px;
     height: 44px;
     /* outline: 1px solid transparent; */
@@ -438,27 +429,28 @@ background-color: var(--acent-color);
 
 .client-list .link{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-
 .client-list .link:hover,
-.client-list .link:focus {
-border: 1px solid var(--acent-color);
+.client-list .link:focus{
+border-color: var(--acent-color);
+}
+.client-list .link:hover svg,
+.client-list .link:focus svg{
+    fill: var(--acent-color);
 }
 
 .icon-client{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 16px 32px;
     fill: #AFB1B8;
 }
 
 .icon-client:hover,
-.icon-client:focus {
+.icon-client:focus{
     fill: var(--acent-color);
 }
 
@@ -535,8 +527,9 @@ border: 1px solid var(--acent-color);
     margin-bottom: 0px;
 }
 
-.project-list-portfolio .item:hover,
-.project-list-portfolio .item:focus {
+.project-list-portfolio .item-link:hover,
+.project-list-portfolio .item-link:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -574,6 +567,7 @@ border: 1px solid var(--acent-color);
 
 .footer-list{
     display: flex;
+    align-items: center;
 }
 
 .footer-soc-network{
@@ -594,18 +588,15 @@ border: 1px solid var(--acent-color);
 }
 
 .footer-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 20px;
     height: 20px;
-    margin: auto;
     fill: #FFFFFF;
 }
 
 .footer .footer-link{
-    display:flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
@@ -615,12 +606,12 @@ border: 1px solid var(--acent-color);
 
 .footer .footer-link:hover,
 .footer .footer-link:focus {
-border: 1px solid var(--acent-color);
-background-color: var(--acent-color); 
+    border: 1px solid var(--acent-color);
+    background-color: var(--acent-color); 
 }
 
 .footer-list p{
-    margin-top: 12px;
+    margin-top: 0px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
