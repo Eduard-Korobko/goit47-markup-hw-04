@@ -129,8 +129,7 @@ li{
 /* Секция 1 Заголовок Н1 Эффективные решения для вашего бизнеса*/
 
 .one {
-    text-align: center;
-  
+    text-align: center; 
     background-image:linear-gradient(
         to right, 
         rgba(47, 48, 58, 0.4), 
@@ -147,6 +146,9 @@ li{
 
     padding-top: 200px;
     padding-bottom: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 .first-title {
     font-weight: 900;
@@ -567,7 +569,7 @@ border-color: var(--acent-color);
 
 .footer-list{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .footer-soc-network{
@@ -600,7 +602,6 @@ border-color: var(--acent-color);
     width: 44px;
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid transparent;
     border-radius: 50%;
 }
 
